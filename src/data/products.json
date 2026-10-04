@@ -1,0 +1,74 @@
+[
+  {
+    "id": "prod-01",
+    "name_pt": "Camiseta Oversized Streetwear Rio",
+    "name_en": "Rio Oversized Streetwear T-Shirt",
+    "category": "Camisetas / T-Shirts",
+    "price_brl": 129.90,
+    "sizes": ["P", "M", "G", "GG"],
+    "colors": ["Preto", "Branco", "Bege"],
+    "image": "https://images.unsplash.com/photo-1521572267360-ee0c2909d518?w=800&auto=format&fit=crop&q=80",
+    "description_pt": "Camiseta 100% algodão premium penteado, corte oversized moderno, perfeita para o clima brasileiro.",
+    "description_en": "100% premium combed cotton oversized streetwear t-shirt."
+  },
+  {
+    "id": "prod-02",
+    "name_pt": "Calça Jeans Cargo Wide Leg Paulista",
+    "name_en": "Paulista Wide Leg Cargo Jeans",
+    "category": "Calças / Pants",
+    "price_brl": 249.90,
+    "sizes": ["38", "40", "42", "44"],
+    "colors": ["Azul Jeans", "Preto"],
+    "image": "https://images.unsplash.com/photo-1541099649105-f69ad21f3246?w=800&auto=format&fit=crop&q=80",
+    "description_pt": "Jeans reforçado com bolsos utilitários cargo, caimento amplo e super confortável.",
+    "description_en": "High durability wide leg cargo jeans with utility pockets."
+  },
+  {
+    "id": "prod-03",
+    "name_pt": "Jaqueta Jeans Vintage Unisex Copacabana",
+    "name_en": "Copacabana Vintage Denim Jacket",
+    "category": "Jaquetas / Jackets",
+    "price_brl": 329.00,
+    "sizes": ["P", "M", "G"],
+    "colors": ["Azul Claro", "Black Jeans"],
+    "image": "https://images.unsplash.com/photo-1576995853123-5a10305d93c0?w=800&auto=format&fit=crop&q=80",
+    "description_pt": "Jaqueta jeans estilosa com lavagem retrô e botões metálicos reforçados.",
+    "description_en": "Retro washed vintage denim jacket with heavy duty metallic buttons."
+  },
+  {
+    "id": "prod-04",
+    "name_pt": "Vestido Midi Linho Verão Ipanema",
+    "name_en": "Ipanema Linen Summer Midi Dress",
+    "category": "Vestidos / Dresses",
+    "price_brl": 219.90,
+    "sizes": ["PP", "P", "M", "G"],
+    "colors": ["Branco", "Verde Oliva", "Terracota"],
+    "image": "https://images.unsplash.com/photo-1595777457583-95e059d581b8?w=800&auto=format&fit=crop&q=80",
+    "description_pt": "Vestido leve de linho com fenda lateral elegante, ideal para dias quentes.",
+    "description_en": "Lightweight breathable linen dress with elegant side slit."
+  },
+  {
+    "id": "prod-05",
+    "name_pt": "Moletom Canguru Heavyweight Minimalist",
+    "name_en": "Minimalist Heavyweight Hoodie",
+    "category": "Moletons / Hoodies",
+    "price_brl": 279.90,
+    "sizes": ["M", "G", "GG"],
+    "colors": ["Cinza Mescla", "Preto", "Verde Botânico"],
+    "image": "https://images.unsplash.com/photo-1556905055-8f358a7a47b2?w=800&auto=format&fit=crop&q=80",
+    "description_pt": "Moletom macio com capuz forrado e bolso canguru, toque aveludado e quente.",
+    "description_en": "Heavyweight premium cotton fleece hoodie with double lined hood."
+  },
+  {
+    "id": "prod-06",
+    "name_pt": "Bermuda Chino Casual Verão",
+    "name_en": "Casual Summer Chino Shorts",
+    "category": "Bermudas / Shorts",
+    "price_brl": 159.90,
+    "sizes": ["38", "40", "42", "44"],
+    "colors": ["Caqui", "Marinho", "Preto"],
+    "image": "https://images.unsplash.com/photo-1591195853828-11db59a44f6b?w=800&auto=format&fit=crop&q=80",
+    "description_pt": "Bermuda de sarja leve com elastano para máximo conforto no dia a dia.",
+    "description_en": "Lightweight stretch cotton chino shorts for casual daily wear."
+  }
+]
