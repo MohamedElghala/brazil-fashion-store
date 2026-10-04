@@ -15,219 +15,182 @@ import {
 
 export default function Footer() {
   return (
-    <footer className="bg-slate-950 border-t border-slate-800 text-slate-400 mt-20">
-      {/* Selos de Confiança e Benefícios */}
-      <div className="border-b border-slate-800/80 bg-slate-900/50 py-8 px-4">
-        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-6 text-center md:text-left">
-          <div className="flex flex-col md:flex-row items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
-              <Truck className="w-6 h-6" />
+    <footer className="mt-20 border-t border-[#E7E2D8]">
+      {/* 4 Pilares de Confiança e Benefícios (Estilo Amaro / Osklen) */}
+      <div className="bg-[#F5F2EB] border-b border-[#E7E2D8] py-10 px-4">
+        <div className="max-w-7xl mx-auto grid grid-cols-2 md:grid-cols-4 gap-8 text-center md:text-left">
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-white border border-[#E7E2D8] flex items-center justify-center text-[#C26D53] flex-shrink-0 shadow-sm">
+              <Truck className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-white">Frete Rápido Brasil</h4>
-              <p className="text-xs text-slate-400 mt-0.5">Envio com rastreio via Correios & Transportadoras</p>
+              <h4 className="text-xs uppercase tracking-wider font-semibold text-[#18181B]">Frete Rápido Brasil</h4>
+              <p className="text-[11px] text-[#71717A] mt-1">Rastreamento via Correios SEDEX e PAC</p>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
-              <RotateCcw className="w-6 h-6" />
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-white border border-[#E7E2D8] flex items-center justify-center text-[#C26D53] flex-shrink-0 shadow-sm">
+              <RotateCcw className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-white">Troca Grátis 7 Dias</h4>
-              <p className="text-xs text-slate-400 mt-0.5">Direito de arrependimento pelo CDC sem custo</p>
+              <h4 className="text-xs uppercase tracking-wider font-semibold text-[#18181B]">Troca Fácil 7 Dias</h4>
+              <p className="text-[11px] text-[#71717A] mt-1">Primeira troca sem custo (CDC Art. 49)</p>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
-              <ShieldCheck className="w-6 h-6" />
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-white border border-[#E7E2D8] flex items-center justify-center text-[#2C4A3E] flex-shrink-0 shadow-sm">
+              <ShieldCheck className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-white">Compra 100% Segura</h4>
-              <p className="text-xs text-slate-400 mt-0.5">Criptografia SSL de ponta a ponta</p>
+              <h4 className="text-xs uppercase tracking-wider font-semibold text-[#18181B]">Compra 100% Segura</h4>
+              <p className="text-[11px] text-[#71717A] mt-1">Criptografia SSL de ponta a ponta</p>
             </div>
           </div>
 
-          <div className="flex flex-col md:flex-row items-center gap-3">
-            <div className="w-12 h-12 rounded-2xl bg-emerald-500/10 border border-emerald-500/20 flex items-center justify-center text-emerald-400 flex-shrink-0">
-              <Headphones className="w-6 h-6" />
+          <div className="flex flex-col md:flex-row items-center gap-4">
+            <div className="w-12 h-12 rounded-full bg-white border border-[#E7E2D8] flex items-center justify-center text-[#C26D53] flex-shrink-0 shadow-sm">
+              <Headphones className="w-5 h-5" />
             </div>
             <div>
-              <h4 className="text-sm font-bold text-white">Suporte Humanizado</h4>
-              <p className="text-xs text-slate-400 mt-0.5">Atendimento via WhatsApp e E-mail dedicado</p>
+              <h4 className="text-xs uppercase tracking-wider font-semibold text-[#18181B]">Suporte Especializado</h4>
+              <p className="text-[11px] text-[#71717A] mt-1">Atendimento humanizado via WhatsApp</p>
             </div>
           </div>
         </div>
       </div>
 
-      {/* Conteúdo Institucional */}
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12">
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8">
-          {/* Coluna 1: Sobre */}
+      {/* Main Footer Body */}
+      <div className="bg-[#18181B] text-[#A1A1AA] py-14 px-4 sm:px-6 lg:px-8">
+        <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-10">
+          {/* Coluna 1: Marca & Missão */}
           <div className="lg:col-span-2 space-y-4">
-            <Link href="/" className="flex items-center gap-2.5">
-              <div className="w-8 h-8 rounded-lg bg-gradient-to-tr from-emerald-500 via-teal-400 to-yellow-400 flex items-center justify-center text-slate-950 font-black text-sm">
-                🇧🇷
-              </div>
-              <span className="font-black text-lg tracking-tight text-white">
-                BRASIL <span className="text-emerald-400">CHIC</span>
+            <Link href="/" className="inline-block">
+              <span className="font-serif text-2xl font-semibold tracking-[0.2em] text-white">
+                BRASIL CHIC
               </span>
             </Link>
-            <p className="text-xs text-slate-400 leading-relaxed max-w-sm">
-              A marca que traduz o espírito livre, elegante e solar do Brasil. Tecidos nobres
-              como linho puro e algodão pima, modelagens exclusivas e foco total em conforto.
+            <p className="text-xs text-[#A1A1AA] leading-relaxed max-w-sm">
+              A marca que traduz o espírito livre, elegante e solar do Brasil. Tecidos nobres como 100% linho puro e algodão pima peruano, modelagens impecáveis e foco total no conforto do dia a dia.
             </p>
-            <div className="space-y-1 text-xs text-slate-400">
-              <p>
-                <strong className="text-slate-300">WhatsApp:</strong> (11) 98765-4321
-              </p>
-              <p>
-                <strong className="text-slate-300">E-mail:</strong> contato@brasilchic.com.br
-              </p>
-              <p>
-                <strong className="text-slate-300">Atendimento:</strong> Seg. a Sex. das 09h às 18h
-              </p>
+            <div className="pt-2 text-xs text-[#D4D4D8] space-y-1">
+              <p><strong>WhatsApp:</strong> (11) 98765-4321</p>
+              <p><strong>E-mail:</strong> contato@brasilchic.com.br</p>
+              <p><strong>Horário:</strong> Segunda a Sexta, 09h às 18h (Brasília)</p>
             </div>
           </div>
 
           {/* Coluna 2: Departamentos */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">Departamentos</h4>
-            <ul className="space-y-2 text-xs">
+          <div>
+            <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-white mb-4">
+              Coleções
+            </h5>
+            <ul className="space-y-2.5 text-xs">
               <li>
-                <Link href="/categoria/masculino" className="hover:text-emerald-400 transition">
+                <Link href="/categoria/masculino" className="hover:text-white transition">
                   Moda Masculina
                 </Link>
               </li>
               <li>
-                <Link href="/categoria/feminino" className="hover:text-emerald-400 transition">
+                <Link href="/categoria/feminino" className="hover:text-white transition">
                   Moda Feminina
                 </Link>
               </li>
               <li>
-                <Link href="/categoria/infantil" className="hover:text-emerald-400 transition">
-                  Linha Infantil & Kids
+                <Link href="/categoria/infantil" className="hover:text-white transition">
+                  Moda Infantil
                 </Link>
               </li>
               <li>
-                <Link href="/categoria/calcados-acessorios" className="hover:text-emerald-400 transition">
+                <Link href="/categoria/calcados-acessorios" className="hover:text-white transition">
                   Calçados & Acessórios
                 </Link>
               </li>
               <li>
-                <Link href="/promocoes" className="hover:text-yellow-400 transition text-yellow-500 font-semibold">
-                  Outlet & Promoções
+                <Link href="/promocoes" className="text-[#C26D53] hover:text-[#D97757] font-semibold transition">
+                  Promoções Especiais
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Coluna 3: Ajuda & Suporte */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">Ajuda & Suporte</h4>
-            <ul className="space-y-2 text-xs">
+          {/* Coluna 3: Atendimento & Ajuda */}
+          <div>
+            <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-white mb-4">
+              Ajuda & Suporte
+            </h5>
+            <ul className="space-y-2.5 text-xs">
               <li>
-                <Link href="/rastreio" className="hover:text-emerald-400 transition">
+                <Link href="/rastreio" className="hover:text-white transition">
                   Rastrear Meu Pedido
                 </Link>
               </li>
               <li>
-                <Link href="/trocas-e-devolucoes" className="hover:text-emerald-400 transition">
+                <Link href="/trocas-e-devolucoes" className="hover:text-white transition">
                   Trocas e Devoluções
                 </Link>
               </li>
               <li>
-                <a
-                  href="https://wa.me/5511987654321"
-                  target="_blank"
-                  rel="noreferrer"
-                  className="hover:text-emerald-400 transition"
-                >
-                  Falar no WhatsApp
-                </a>
+                <Link href="/politica-de-privacidade" className="hover:text-white transition">
+                  Política de Privacidade (LGPD)
+                </Link>
               </li>
               <li>
-                <Link href="/admin" className="text-emerald-400 hover:underline">
+                <Link href="/termos-de-uso" className="hover:text-white transition">
+                  Termos e Condições
+                </Link>
+              </li>
+              <li>
+                <Link href="/admin" className="text-[#71717A] hover:text-white transition">
                   Acesso Administrativo
                 </Link>
               </li>
             </ul>
           </div>
 
-          {/* Coluna 4: Institucional & Legal */}
-          <div className="space-y-3">
-            <h4 className="text-xs font-bold uppercase tracking-wider text-white">Políticas & Legal</h4>
-            <ul className="space-y-2 text-xs">
-              <li>
-                <Link href="/politica-de-privacidade" className="hover:text-emerald-400 transition">
-                  Privacidade (LGPD)
-                </Link>
-              </li>
-              <li>
-                <Link href="/termos-de-uso" className="hover:text-emerald-400 transition">
-                  Termos e Condições de Uso
-                </Link>
-              </li>
-              <li>
-                <Link href="/trocas-e-devolucoes" className="hover:text-emerald-400 transition">
-                  Código de Defesa do Consumidor
-                </Link>
-              </li>
-            </ul>
-          </div>
-        </div>
+          {/* Coluna 4: Meios de Pagamento & Segurança */}
+          <div>
+            <h5 className="text-xs uppercase tracking-[0.2em] font-semibold text-white mb-4">
+              Pagamento & Segurança
+            </h5>
+            <div className="space-y-3">
+              <div className="bg-[#27272A] rounded-xl p-3 border border-[#3F3F46]">
+                <div className="flex items-center gap-2 text-xs font-semibold text-white">
+                  <QrCode className="w-4 h-4 text-[#C26D53]" />
+                  <span>Pix Banco Central</span>
+                </div>
+                <p className="text-[11px] text-[#A1A1AA] mt-1">5% OFF à vista com aprovação instantânea</p>
+              </div>
 
-        {/* Formas de Pagamento e Selos de Segurança */}
-        <div className="border-t border-slate-800/80 mt-10 pt-8 flex flex-col md:flex-row items-center justify-between gap-6">
-          <div className="flex flex-col items-center md:items-start gap-2">
-            <span className="text-[11px] font-bold text-slate-300 uppercase tracking-wider">
-              Formas de Pagamento Aceitas:
-            </span>
-            <div className="flex flex-wrap items-center gap-2 text-xs">
-              <span className="bg-emerald-950 text-emerald-300 border border-emerald-500/30 px-2.5 py-1 rounded-lg font-bold flex items-center gap-1">
-                <QrCode className="w-3.5 h-3.5" /> Pix (Instantâneo)
-              </span>
-              <span className="bg-slate-800 text-slate-200 border border-slate-700 px-2.5 py-1 rounded-lg font-medium flex items-center gap-1">
-                <CreditCard className="w-3.5 h-3.5" /> Cartão até 12x
-              </span>
-              <span className="bg-slate-800 text-slate-200 border border-slate-700 px-2.5 py-1 rounded-lg font-medium flex items-center gap-1">
-                <FileText className="w-3.5 h-3.5" /> Boleto Bancário
-              </span>
-              <span className="bg-slate-800 text-slate-300 border border-slate-700 px-2 py-1 rounded text-[11px]">
-                Visa • Master • Elo • Hipercard
-              </span>
-            </div>
-          </div>
+              <div className="bg-[#27272A] rounded-xl p-3 border border-[#3F3F46]">
+                <div className="flex items-center gap-2 text-xs font-semibold text-white">
+                  <CreditCard className="w-4 h-4 text-[#C26D53]" />
+                  <span>Cartões de Crédito</span>
+                </div>
+                <p className="text-[11px] text-[#A1A1AA] mt-1">Parcelamento em até 12x sem juros</p>
+              </div>
 
-          <div className="flex flex-col items-center md:items-end gap-2">
-            <span className="text-[11px] font-bold text-slate-300 uppercase tracking-wider">
-              Segurança & Certificações:
-            </span>
-            <div className="flex items-center gap-3 text-xs">
-              <span className="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-lg flex items-center gap-1.5 text-[11px]">
-                <Lock className="w-3.5 h-3.5 text-emerald-400" />
-                SSL 256-Bit Protegido
-              </span>
-              <span className="bg-slate-800 border border-slate-700 text-slate-300 px-3 py-1 rounded-lg flex items-center gap-1.5 text-[11px]">
-                <ShieldCheck className="w-3.5 h-3.5 text-teal-400" />
-                Mercado Pago / Stripe
-              </span>
+              <div className="flex items-center gap-1.5 text-[11px] text-[#71717A] pt-1">
+                <Lock className="w-3.5 h-3.5 text-[#2C4A3E]" />
+                <span>Ambiente Seguro SSL 256 bits</span>
+              </div>
             </div>
           </div>
         </div>
 
-        {/* Rodapé Jurídico Obrigatório no Brasil (Lei do E-commerce nº 7.962/2013) */}
-        <div className="border-t border-slate-800/80 mt-8 pt-6 text-center text-[11px] text-slate-500 space-y-1.5">
+        {/* Rodapé Legal Obrigatório (Decreto Federal nº 7.962/2013) */}
+        <div className="mt-12 pt-8 border-t border-[#27272A] text-[11px] text-[#71717A] leading-relaxed flex flex-col md:flex-row items-center justify-between gap-4">
           <p>
-            <strong>BRASIL CHIC COMÉRCIO VAREJISTA DE MODA LTDA</strong> — CNPJ: 45.123.789/0001-90
+            © {new Date().getFullYear()} <strong>Brasil Chic Comércio de Roupas Ltda.</strong> — Todos os direitos reservados.
+            <br />
+            CNPJ: <strong>45.123.789/0001-90</strong> | Av. Paulista, 1578, Bela Vista, São Paulo - SP, CEP 01310-200.
           </p>
-          <p>
-            Av. Paulista, 1578, Bela Vista, São Paulo - SP, CEP: 01310-200 • Todos os direitos reservados © {new Date().getFullYear()}
-          </p>
-          <p className="text-[10px] text-slate-600">
-            Os preços, promoções e condições de pagamento são válidos exclusivamente para compras realizadas neste site.
-          </p>
+          <div className="flex items-center gap-4 text-[#A1A1AA]">
+            <span>🇧🇷 Feito com alma brasileira</span>
+            <span>•</span>
+            <span>Correios SEDEX / PAC</span>
+          </div>
         </div>
       </div>
     </footer>

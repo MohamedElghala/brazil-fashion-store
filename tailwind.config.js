@@ -8,13 +8,30 @@ module.exports = {
   theme: {
     extend: {
       colors: {
+        linen: "#FBF9F5",
+        sand: "#F5F2EB",
+        obsidian: "#18181B",
+        terracotta: {
+          DEFAULT: "#C26D53",
+          hover: "#A85840",
+          light: "#FDF5F2",
+        },
+        sage: {
+          DEFAULT: "#2C4A3E",
+          hover: "#223B31",
+          light: "#EBF3EE",
+        },
         brazil: {
-          green: "#009c3b",
-          yellow: "#ffdf00",
-          blue: "#002776",
-          dark: "#121212",
-          card: "#1e1e1e"
+          green: "#2C4A3E",
+          yellow: "#C26D53",
+          blue: "#18181B",
+          dark: "#18181B",
+          card: "#FFFFFF",
         }
+      },
+      fontFamily: {
+        serif: ['Playfair Display', 'Georgia', 'serif'],
+        sans: ['Plus Jakarta Sans', 'Inter', 'system-ui', 'sans-serif'],
       }
     },
   },
