@@ -23,6 +23,7 @@ import {
 } from 'lucide-react';
 import { useCart } from '@/context/CartContext';
 import { formatBRL, calculateInstallments } from '@/lib/brazil';
+import FabricCanvas from '@/components/FabricCanvas';
 
 interface Product {
   id: string;
@@ -49,7 +50,7 @@ function HomeContent() {
   const searchParams = useSearchParams();
   const searchParam = searchParams.get('search') || '';
 
-  const { addToCart } = useCart();
+  const { addToCart, setIsCartOpen } = useCart();
 
   const [products, setProducts] = useState<Product[]>([]);
   const [loading, setLoading] = useState(true);
@@ -130,6 +131,8 @@ function HomeContent() {
       colorHex: sel.colorHex,
       image: product.images[0]?.url || 'https://images.unsplash.com/photo-1596755094514-f87e34085b2c?w=800&q=80',
     });
+
+    setIsCartOpen(true);
   };
 
   // Filtragem e ordenação
@@ -171,7 +174,13 @@ function HomeContent() {
     <div className="space-y-20">
       {/* 1. Hero Editorial Split Banner (Estilo Amaro & Osklen) */}
       <section className="relative bg-[#F5F2EB] border-b border-[#E7E2D8] overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+        <FabricCanvas
+          className="opacity-70"
+          lineColor="rgba(24, 24, 27, 0.04)"
+          accentColor="rgba(194, 109, 83, 0.16)"
+          density={24}
+        />
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-16 lg:py-24 grid grid-cols-1 lg:grid-cols-12 gap-12 items-center relative z-10">
           {/* Lado Esquerdo: Tipografia & Ação */}
           <div className="lg:col-span-7 space-y-6">
             <div className="inline-flex items-center gap-2 bg-white px-3.5 py-1.5 rounded-full border border-[#E7E2D8] text-[11px] font-semibold uppercase tracking-[0.2em] text-[#C26D53]">
@@ -426,7 +435,7 @@ function HomeContent() {
                 return (
                   <div
                     key={product.id}
-                    className="bg-white rounded-2xl overflow-hidden border border-[#E7E2D8] shadow-sm hover:shadow-md transition-all flex flex-col group"
+                    className="bg-white rounded-2xl overflow-hidden border border-[#E7E2D8] shadow-sm hover:shadow-xl hover:-translate-y-1.5 transition-all duration-300 flex flex-col group"
                   >
                     {/* Imagem do Produto */}
                     <div className="relative aspect-[3/4] bg-[#F5F2EB] overflow-hidden">
@@ -537,6 +546,12 @@ function HomeContent() {
 
         {/* 4. Banner Editorial Storytelling (O Estilo de Vida Solar do Brasil) */}
         <section className="bg-[#18181B] text-white rounded-3xl p-8 sm:p-14 overflow-hidden relative shadow-2xl">
+          <FabricCanvas
+            className="opacity-25"
+            lineColor="rgba(255, 255, 255, 0.08)"
+            accentColor="rgba(194, 109, 83, 0.35)"
+            density={20}
+          />
           <div className="max-w-2xl space-y-5 relative z-10">
             <span className="text-xs uppercase tracking-[0.25em] text-[#C26D53] font-semibold">
               Manifesto da Marca
