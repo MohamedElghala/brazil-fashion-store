@@ -69,17 +69,34 @@
 ## 4. النشر الحي والمستقر على Vercel (Production Live Deployment)
 - **الرابط المباشر الدائم 24/7 للمتجر على حسابك:**
   👉 **`https://brazil-fashion-store.vercel.app`**
-- **حالة النشر:** تم الربط بنجاح ومباشرة مع مستودع GitHub `MohamedElghala/brazil-fashion-store`.
-- **التحديث الأخير (Commit `9d7f6186`):**
-  - تطبيق نظام التصميم الفاخر (Minimalist Luxury Resort المستوحى من علامتي Amaro و Osklen البرازيليتين).
+- **مستودع GitHub المتزامن (Commit `b1a7e88c`):**
+  👉 **`https://github.com/MohamedElghala/brazil-fashion-store`**
+- **حالة النشر والواجهة:**
+  - تطبيق أسلوب التصميم الفاخر (Minimalist Luxury Resort المستوحى من Amaro & Osklen).
   - لوحة الألوان: كتان دافئ `#FBF9F5`، رمادي أوبسيديان فاحم `#18181B`، تيراكوتا دافئة `#C26D53`، وميرمية حكيمة `#2C4A3E`.
-  - الخطوط الفاخرة: `Playfair Display` للعناوين الملكية و `Plus Jakarta Sans` للنصوص والواجهة.
-  - حساب التقسيط المباشر حتى 12 قسط بدون فوائد، وخصم 5% فوري عند الدفع عبر الـ Pix.
+  - الخطوط الفاخرة: `Playfair Display` الملكية مع `Plus Jakarta Sans`.
+  - كانفاس خيوط النسيج الحي المتموج (`FabricCanvas.tsx`) بخلفية الهيرو والمانيفستو.
+  - بطاقات تفاعلية لمسية (Tactile Micro-elevation) واختيار فوري للمقاسات والألوان.
+  - سلة جانبية فاخرة (`CartDrawer.tsx`) مع شريط شحن مجاني تفاعلي ودفع Pix بخصم 5%.
+  - تم فحص الواجهة عبر Puppeteer وتأكيد الاستجابة بـ 200 OK.
 
 ---
 
-## 5. تكامل Superdesign ومحرك الأنيميشن والجرافيكس المتقدم
-- تم تثبيت واختبار أداة Superdesign CLI (`@superdesign/cli@latest`).
-- تم إطلاق كود المصادقة وفتح الرابط في المتصفح: `https://superdesign.dev/auth/cli?code=SRVD-4326`.
-- تم إنشاء نموذج محرك الأنيميشن الحركي (Coldbrook Kinetic Engine) مع كانفاس خيوط الكتان التفاعلية، وتدرج ظهور الكلمات (Staggered Word Spans)، والبطاقات اللمسية (Tactile Cards).
-- تم توثيق خطة التنفيذ في ملف: `superdesign_luxury_ui_plan.md`.
+## 5. تكامل Superdesign ومكتبة البرومبتات والمسودات
+- **مشروع Superdesign المعتمد:** `7001671b-ec6a-4a1a-98cd-9558ff708e0c`
+- **المسودة الجديدة المستوردة على الكانفاس (New Draft Variant Node):**
+  - **العنوان:** `Brasil Chic — Luxury Kinetic E-Commerce`
+  - **معرف المسودة (Draft ID):** `3efc8bc9-4fbd-4f26-afe0-ac0f8c9d98a1`
+  - **رابط العقدة في الكانفاس (Node URL):**
+    👉 [https://superdesign.dev/teams/bd04d2b2-ffd0-4142-9b29-df30bdec9a10/projects/7001671b-ec6a-4a1a-98cd-9558ff708e0c?node=draft-variant-3efc8bc9-4fbd-4f26-afe0-ac0f8c9d98a1](https://superdesign.dev/teams/bd04d2b2-ffd0-4142-9b29-df30bdec9a10/projects/7001671b-ec6a-4a1a-98cd-9558ff708e0c?node=draft-variant-3efc8bc9-4fbd-4f26-afe0-ac0f8c9d98a1)
+  - **رابط المعاينة المباشرة (Live Preview):**
+    👉 [https://p.superdesign.dev/draft/3efc8bc9-4fbd-4f26-afe0-ac0f8c9d98a1](https://p.superdesign.dev/draft/3efc8bc9-4fbd-4f26-afe0-ac0f8c9d98a1)
+- **المسودات المدمجة والمرجعية المستفاد منها:**
+  - `Echoic Portal Experience` (`ae104ab6-bb40-411d-814b-6d621f07b360`)
+  - `Coldbrook — Refined Scroll Dynamics` (`91143b33-c9ec-4595-945c-0bd99f664a16`)
+  - كود Coldbrook المستقل محفوظ في: `C:\Users\Mohamed Helmy\.gemini\antigravity\scratch\coldbrook\index.html`
+- **أهم القوالب المستخرجة من مكتبة برومبتات Superdesign:**
+  - `brutalist-e-commerce-page`
+  - `animated-didone-landing-page-blush-and-dusty-pink-editorial-with-multiply-blended-product-photography`
+  - `high-contrast-landing-page`
+  - `luxury-focused-design-system`

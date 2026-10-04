@@ -9,24 +9,13 @@
     font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
     -webkit-font-smoothing: antialiased;
     -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
   }
 
   h1, h2, h3, h4, .font-editorial {
     font-family: 'Playfair Display', Georgia, serif;
-    letter-spacing: -0.01em;
+    letter-spacing: -0.02em;
   }
-}
-
-.pix-border {
-  border: 1.5px solid #2C4A3E;
-}
-
-.pix-bg {
-  background-color: #2C4A3E;
-}
-
-.pix-text {
-  color: #2C4A3E;
 }
 
 /* Custom luxury scrollbar */
@@ -46,4 +35,102 @@
 
 ::-webkit-scrollbar-thumb:hover {
   background: #A8A29E;
+}
+
+/* Brazilian Payment Custom Classes */
+.pix-border {
+  border: 1.5px solid #2C4A3E;
+}
+
+.pix-bg {
+  background-color: #2C4A3E;
+}
+
+.pix-text {
+  color: #2C4A3E;
+}
+
+/* Superdesign Hybrid Prompt 2 & 5 Motion Utilities */
+@keyframes marquee {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+@keyframes marquee-reverse {
+  0% {
+    transform: translateX(-50%);
+  }
+  100% {
+    transform: translateX(0%);
+  }
+}
+
+.animate-marquee {
+  display: flex;
+  width: max-content;
+  animation: marquee 30s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee:hover {
+  animation-play-state: paused;
+}
+
+.animate-marquee-reverse {
+  display: flex;
+  width: max-content;
+  animation: marquee-reverse 34s linear infinite;
+  will-change: transform;
+}
+
+.animate-marquee-reverse:hover {
+  animation-play-state: paused;
+}
+
+/* Blend Mode Utilities */
+.blend-multiply {
+  mix-blend-mode: multiply;
+}
+
+.blend-difference {
+  mix-blend-mode: difference;
+}
+
+/* Asymmetrical luxury borders from Prompt #5 */
+.asymmetric-radius-1 {
+  border-top-left-radius: 80px;
+  border-bottom-right-radius: 40px;
+  border-top-right-radius: 12px;
+  border-bottom-left-radius: 12px;
+}
+
+.asymmetric-radius-2 {
+  border-top-right-radius: 80px;
+  border-bottom-left-radius: 40px;
+  border-top-left-radius: 12px;
+  border-bottom-right-radius: 12px;
+}
+
+.asymmetric-radius-3 {
+  border-radius: 40px;
+}
+
+/* Smooth Editorial Image Hover Transitions */
+.editorial-img-transition {
+  filter: grayscale(15%) contrast(102%);
+  transition: filter 0.7s cubic-bezier(0.16, 1, 0.3, 1), transform 0.7s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+.editorial-img-transition:hover {
+  filter: grayscale(0%) contrast(105%);
+  transform: scale(1.05);
+}
+
+/* Reveal transition */
+.reveal-stagger {
+  transition: all 0.8s cubic-bezier(0.16, 1, 0.3, 1);
 }

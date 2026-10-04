@@ -81,16 +81,11 @@ async function main() {
 
   let baseCommitSha = '';
   try {
-    const initRes = await request('PUT', `/repos/${owner}/${repo}/contents/README.md`, {
-      message: 'Initialize repository',
-      content: readmeContent
-    });
-    baseCommitSha = initRes.commit.sha;
-    console.log('Repository initialized! Commit SHA:', baseCommitSha);
-  } catch (e) {
-    console.log('README may already exist, fetching main branch...');
     const ref = await request('GET', `/repos/${owner}/${repo}/git/ref/heads/main`);
     baseCommitSha = ref.object.sha;
+    console.log('Current main commit SHA:', baseCommitSha);
+  } catch (e) {
+    console.log('Branch main not found, creating new ref...');
   }
 
   console.log('2. Collecting project files...');
@@ -125,7 +120,7 @@ async function main() {
 
   console.log('5. Creating Commit...');
   const commit = await request('POST', `/repos/${owner}/${repo}/git/commits`, {
-    message: 'Initial commit: Complete Brazilian fashion store Brasil Chic',
+    message: 'feat(ui): hybrid Prompt 2 and Prompt 5 luxury kinetic fashion storefront',
     tree: tree.sha,
     parents: baseCommitSha ? [baseCommitSha] : []
   });

@@ -5,6 +5,7 @@ import Navbar from '@/components/Navbar';
 import CartDrawer from '@/components/CartDrawer';
 import Footer from '@/components/Footer';
 import WhatsAppButton from '@/components/WhatsAppButton';
+import DifferenceCursor from '@/components/DifferenceCursor';
 
 export const metadata = {
   title: 'Brasil Chic | Moda & Estilo Brasileiro - Masculino, Feminino e Infantil',
@@ -27,6 +28,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
       </head>
       <body className="bg-[#FBF9F5] text-[#18181B] min-h-screen flex flex-col antialiased selection:bg-[#C26D53] selection:text-white font-sans">
         <CartProvider>
+          <DifferenceCursor />
           <Navbar />
           <main className="flex-1 w-full mx-auto">
             {children}
